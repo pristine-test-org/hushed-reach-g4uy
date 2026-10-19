@@ -2,3 +2,4 @@
 [build]
   command = "npm run build"
   publish = "dist"
+# Netlify site: hushed-reach-g4uy-wasabi-0pd

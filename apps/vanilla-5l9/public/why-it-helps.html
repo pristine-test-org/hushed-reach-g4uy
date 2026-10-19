@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why it helps · Vanilla</title>
+    <style>
+      body { margin: 0; font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      header, main, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      .mark { font-weight: 700; color: #2f7d4f; }
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+        background: linear-gradient(90deg, #2f7d4f, #3b4bc8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+      .flush { margin: 0; padding: 0; width: 100vw; max-width: none; line-height: 1.6; }
+      /* Intentional, for Impeccable's test drive: low-contrast text in a light grey. */
+      .aside { color: #c8c8c8; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .back { font-size: 10px; color: #2f7d4f; }
+      /* Intentional, for Impeccable's test drive: transition on a layout property. */
+      .meter { height: 0.5rem; width: 30%; background: #2f7d4f; transition: width 0.3s; }
+      .meter:hover { width: 100%; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="mark">Vanilla</span>
+    </header>
+    <main>
+      <h1>Why it helps</h1>
+      <p class="flush">Vanilla keeps one shared list in view so nobody has to ask what is next, and everyone reads the same five rows.</p>
+      <p class="aside">Updated whenever the list changes.</p>
+      <div class="meter" aria-hidden="true"></div>
+      <p><a class="back" href="/">Back to the front door</a></p>
+    </main>
+    <footer>Vanilla</footer>
+  </body>
+</html>
